@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #1a1a1a;
+}
+html,
+body {
+  width: fit-content;
+  overflow: auto;
+}
+body {
+  button,
+  a {
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    outline: none;
+  }
+}

@@ -1,0 +1,61 @@
+header {
+  position: fixed;
+  width: 98%;
+  padding: 0 1%;
+  height: 10vh;
+
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  pointer-events: none;
+  .headerButton {
+    pointer-events: all;
+    height: 100%;
+    width: 10vh;
+    position: relative;
+    cursor: pointer;
+  }
+  #moneyCount {
+    #moneyIconContainer {
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 102;
+      #moneyIcon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    #moneyValue {
+      position: absolute;
+      top: 2.5vh;
+      left: 3vh;
+
+      min-width: 10vh;
+      padding: 0 1vh 0 6vh;
+      width: fit-content;
+      height: 5vh;
+      background-color: var(--pink1);
+
+      border-radius: 0 2vh 2vh 0;
+      z-index: 101;
+      border: 0.5vh solid;
+      border-color: var(--pinkBorder1);
+
+      text-align: center;
+      align-content: center;
+      font-size: 5vh;
+      text-wrap: nowrap;
+      color: var(--pinkBorder1);
+      font-family: "VT323";
+      letter-spacing: -2px;
+      font-weight: 100;
+    }
+  }
+}
